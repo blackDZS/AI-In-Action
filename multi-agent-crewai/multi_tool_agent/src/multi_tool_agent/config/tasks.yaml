@@ -1,0 +1,18 @@
+research_task:
+  description: >
+    Answer the customer's questions based on the local PDF files.
+    The research agent will search through the PDF to find the relevant answers.
+    Your final answer MUST be clear and accurate, based on the content of the local PDF files.
+
+    Here is the customer's question:
+    {customer_question}
+  expected_output: >
+    Provide clear and accurate answers to the customer's questions based on the content of the local PDF files.
+  agent: researcher
+
+write_email_task:
+  description: >
+    Write a professional summary to answer user's question base on the findings of researcher agent 
+  expected_output: >
+    使用中文写一个清晰专业的答案。 
+  agent: professional_writer
